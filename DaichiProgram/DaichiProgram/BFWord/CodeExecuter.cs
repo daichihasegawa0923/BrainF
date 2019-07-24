@@ -97,6 +97,12 @@ namespace DaichiProgram.BFWord
                         }
                     }
                 }
+
+                if (code[i].ToString().Equals(WordDefiniton.DEFINITION_WORD["INPUT_POINTER"]))
+                {
+                    var input = Byte.Parse(Console.ReadLine());
+                    _pointer[_pointerPosition] = input;
+                }
             }
         }
         

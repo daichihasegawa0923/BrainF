@@ -22,6 +22,12 @@ namespace DaichiProgram.BFWord
             {
                 for (int i = 0; i < word.Length; i++)
                 {
+                    // 半角の空白は無視
+                    if (word[i].ToString().Equals(" "))
+                    {
+                        continue;
+                    }
+
                     if (!WordDefiniton.IsDefinition(word[i].ToString()))
                     {
                         throw new Exception();

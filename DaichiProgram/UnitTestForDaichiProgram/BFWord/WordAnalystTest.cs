@@ -19,12 +19,5 @@ namespace UnitTestForDaichiProgram.BFWord
         {
             new WordAnalyst().JudgeIsNotError("未定義の文字列");
         }
-
-        [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void JudgeIsNotError_異常系_空文字列()
-        {
-            new WordAnalyst().JudgeIsNotError(String.Empty);
-        }
     }
 }
